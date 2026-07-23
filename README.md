@@ -108,24 +108,6 @@ flowchart LR
 - **Scope discipline:** ship a validated core before breadth.
 - **Secrets never live in the codebase; auth is pluggable and portable.**
 
-## Roadmap
-
-**Now — MVP core**
-- Case intake with verbatim patient-account capture
-- AI-assisted, voice-preserving narrative drafting
-- Mandatory human review workflow
-- Reviewer workspace: draft-vs-edit change view, inline patient voice, reproducibility panel, per-case history
-- Tamper-evident audit trail + role-based access
-
-**Next**
-- E2B(R3) structured export for regulatory submission
-- MedDRA-based medical coding *(subject to dictionary licensing)*
-- Expanded regulatory authority support
-
-**Later**
-- Multi-tenant / CRO capabilities
-- Additional integrations (EDC, EHR) and analytics
-
 ## Important disclaimers
 
 - **Not a medical device.** PV Sentinel is a drafting and workflow assistant, not an
