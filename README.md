@@ -54,6 +54,16 @@ things that actually matter to patients and regulators: **trust** and **traceabi
 | 🎯 **Honest AI** | No fabricated "accuracy" or "confidence" scores. If the AI can't help, it says so clearly rather than inventing content. |
 | 🔓 **No vendor lock-in** | Designed for portable deployment (cloud or on-premises) with pluggable authentication. |
 
+## Inside the review workspace
+
+Every AI draft lands in a review screen designed so a qualified reviewer can trust it at a
+glance — and prove that trust later:
+
+- **Side-by-side change view** — see exactly what the AI drafted versus what the reviewer edited before approval.
+- **The patient's own words, in view** — the verbatim account sits alongside the draft, with automatic alerts when too little of the patient's voice survives.
+- **Reproducibility panel** — the exact model and prompt fingerprint behind each narrative, so any output can be explained and reproduced.
+- **Per-case history** — the complete, hash-chained trail of everything that happened to that case, from intake through review.
+
 ## Who it's for
 
 - **PV / Safety Officers & Medical Reviewers** — faster drafting, consistent structure.
@@ -104,6 +114,7 @@ flowchart LR
 - Case intake with verbatim patient-account capture
 - AI-assisted, voice-preserving narrative drafting
 - Mandatory human review workflow
+- Reviewer workspace: draft-vs-edit change view, inline patient voice, reproducibility panel, per-case history
 - Tamper-evident audit trail + role-based access
 
 **Next**
