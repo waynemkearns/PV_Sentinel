@@ -141,6 +141,10 @@ inspection. The compliance foundations are built in rather than added later:
 - **Human oversight as a hard constraint.** No AI output reaches a record
   without approval by a qualified reviewer. This is enforced in the workflow,
   not left to policy.
+- **Data protection.** Patient data is held in the application's own database,
+  stored immutably and integrity-hashed, with access restricted to
+  authenticated, role-scoped users. Retention policy and pseudonymisation are
+  defined at deployment time.
 
 Formal computer system validation (IQ/OQ/PQ) would be required before use in a
 regulated production environment. See Scope and next steps.
