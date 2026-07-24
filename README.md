@@ -145,6 +145,10 @@ inspection. The compliance foundations are built in rather than added later:
   stored immutably and integrity-hashed, with access restricted to
   authenticated, role-scoped users. Retention policy and pseudonymisation are
   defined at deployment time.
+- **Accessibility.** The interface is developed against WCAG 2.1 AA, with
+  automated conformance checks (axe-core) gating every change in CI — relevant
+  to obligations such as the European Accessibility Act and Section 508.
+  (Full conformance also requires manual assistive-technology testing.)
 
 Formal computer system validation (IQ/OQ/PQ) would be required before use in a
 regulated production environment. See Scope and next steps.
