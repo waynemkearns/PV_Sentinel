@@ -71,6 +71,16 @@ glance — and prove that trust later:
 - **Reproducibility panel** — the exact model and prompt fingerprint behind each narrative, so any output can be explained and reproduced.
 - **Per-case history** — the complete, hash-chained trail of everything that happened to that case, from intake through review.
 
+### See it in practice
+
+| | |
+|---|---|
+| ![Review workspace](docs/img/review-workspace.png) | **Review workspace.** The AI draft with the reviewer's edits shown inline, alongside the patient's verbatim account and a live patient-voice fidelity check. |
+| ![Reproducibility panel](docs/img/reproducibility.png) | **Reproducibility panel.** The model and prompt fingerprint behind this narrative. |
+| ![Case history](docs/img/audit-trail.png) | **Case history.** The hash-chained record of every action taken on the case. |
+
+*Synthetic case data only — nothing here is a real adverse-event report or a real patient's words.*
+
 ## Who it's for
 
 - **PV / Safety Officers & Medical Reviewers** — faster drafting, consistent structure.
