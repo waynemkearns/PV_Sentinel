@@ -10,8 +10,15 @@
 
 ---
 
-> **Status:** Active development. This repository is the **public overview** of PV Sentinel.
-> The application source code is maintained privately during development.
+> **Status:** Working MVP, built 2025. Feature-complete against the scope below;
+> not validated for regulated production use (see Scope and next steps).
+>
+> **About this repository:** this is the public overview of PV Sentinel. The
+> application source is held in a private repository, which carries the full
+> development history. This overview is generated from the codebase, so the
+> capabilities described here track what is actually built.
+>
+> **Built by:** Wayne Kearns — designed and built end to end.
 
 ---
 
@@ -108,6 +115,61 @@ flowchart LR
 - **Scope discipline:** ship a validated core before breadth.
 - **Secrets never live in the codebase; auth is pluggable and portable.**
 
+## Regulatory posture
+
+PV Sentinel is designed for an environment where every output has to survive
+inspection. The compliance foundations are built in rather than added later:
+
+- **ICH E2B alignment.** Narratives are structured against E2B expectations so
+  case data maps cleanly to downstream submission formats.
+- **21 CFR Part 11 principles.** The audit ledger is append-only and
+  hash-chained, so any alteration of a historical record is detectable.
+  Actions are attributed to a named, authenticated user.
+- **Reproducibility.** Each AI generation is locked to a cryptographic
+  fingerprint of the exact model and prompt used, so any narrative can be
+  reproduced and explained after the fact.
+- **Human oversight as a hard constraint.** No AI output reaches a record
+  without approval by a qualified reviewer. This is enforced in the workflow,
+  not left to policy.
+
+Formal computer system validation (IQ/OQ/PQ) would be required before use in a
+regulated production environment. See Scope and next steps.
+
+## Scope and next steps
+
+PV Sentinel was built to prove a specific thesis: that AI can take real time out
+of adverse-event narrative drafting without weakening the audit trail or
+displacing human judgement. Scope was deliberately held narrow to get that core
+right.
+
+**Built**
+
+- Structured AE case intake, including the reporter's verbatim account
+- AI-assisted drafting of ICH E2B-aligned narratives (provider-agnostic; honest failure when no model is configured)
+- Patient-voice fidelity checking, with low fidelity forcing human review
+- Reviewer workspace with side-by-side draft-versus-edit comparison and inline patient voice
+- Model and prompt fingerprinting for reproducible generation
+- Hash-chained, append-only audit ledger with integrity verification
+- Role-based access control
+- Versioned database migrations and a containerised deployment baseline (Docker + PostgreSQL)
+
+**Deliberately out of scope for the MVP**
+
+- Signal detection and case-series analytics
+- Automated MedDRA coding
+- E2B(R3) transmission to regulatory gateways
+- Duplicate detection and case merging
+- Multi-language intake
+
+**What production readiness would require**
+
+- Formal computer system validation (IQ/OQ/PQ) with documented URS, FS, and DS
+- Enterprise authentication (SSO/OIDC) in place of the current authentication stub
+- Penetration testing and a data protection impact assessment
+- Model evaluation against a curated narrative benchmark, with drift monitoring
+- Integration with an established safety database rather than standalone storage
+- Defined SOPs covering reviewer qualification, escalation, and periodic review
+
 ## Important disclaimers
 
 - **Not a medical device.** PV Sentinel is a drafting and workflow assistant, not an
@@ -119,8 +181,10 @@ flowchart LR
 
 ## Contact
 
-For collaboration, pilot, or investment enquiries, please reach out via the repository
-owner's profile.
+Wayne Kearns — wayne.kearns@nortesconsulting.com ·
+[linkedin.com/in/waynekearns](https://www.linkedin.com/in/waynekearns/)
+
+Happy to walk through the private repository and a live demonstration on request.
 
 ---
 
