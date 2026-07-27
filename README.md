@@ -4,7 +4,7 @@
 
 **An AI-assisted pharmacovigilance platform built patient-first and audit-ready.**
 
-*Draft regulator-ready adverse-event narratives faster — without losing the patient's voice or the audit trail.*
+*Draft regulator-ready adverse-event narratives faster ΓÇö without losing the patient's voice or the audit trail.*
 
 </div>
 
@@ -18,16 +18,16 @@
 > development history. This overview is generated from the codebase, so the
 > capabilities described here track what is actually built.
 >
-> **Built by:** Wayne Kearns — designed and built end to end.
+> **Built by:** Wayne Kearns ΓÇö designed and built end to end.
 
 ---
 
 ## The problem
 
-Pharmacovigilance (PV) — the science of monitoring drug safety — runs on a slow, manual,
+Pharmacovigilance (PV) ΓÇö the science of monitoring drug safety ΓÇö runs on a slow, manual,
 and error-prone workflow:
 
-- Writing a single adverse-event (AE) case narrative can take **2–4 hours**.
+- Writing a single adverse-event (AE) case narrative can take **2ΓÇô4 hours**.
 - Manual medical coding is inconsistent and error-prone.
 - Established enterprise safety systems are expensive and require long, heavy deployments.
 - Regulators (FDA, EMA, PMDA, Health Canada) demand complete, tamper-evident audit trails
@@ -39,13 +39,13 @@ on the medical judgement that actually protects patients.
 ## What PV Sentinel does
 
 PV Sentinel helps drug-safety professionals move from raw report to submission-ready case
-faster, with an AI drafting assistant that **augments** — never replaces — human review:
+faster, with an AI drafting assistant that **augments** ΓÇö never replaces ΓÇö human review:
 
-1. **Intake** structured adverse-event case data (and the patient's own account).
+1. **Intake** structured, ICH E2B-aligned case data — patient demographics, suspect product and therapy dates, event onset, seriousness criteria, dechallenge/rechallenge, and the patient's own account.
 2. **Draft** an ICH E2B-aligned narrative with an AI assistant.
 3. **Preserve** the patient's voice and check that the AI hasn't summarised it away.
-4. **Review** — a qualified human must approve or reject every AI draft.
-5. **Audit** — every action is written to a tamper-evident, append-only trail.
+4. **Review** ΓÇö a qualified human must approve or reject every AI draft.
+5. **Audit** ΓÇö every action is written to a tamper-evident, append-only trail.
 
 ## What makes it different
 
@@ -54,22 +54,22 @@ things that actually matter to patients and regulators: **trust** and **traceabi
 
 | Principle | What it means in practice |
 | --- | --- |
-| 🗣️ **Patient-voice preservation** | The patient's own words are stored verbatim and immutably. Every AI narrative is checked for how much of that original voice survived — low fidelity forces human review. |
-| 🔒 **Reproducible AI** | Every AI generation is locked to a cryptographic fingerprint of the exact model and prompt used, so any output can be reproduced and explained later. |
-| 🧾 **Tamper-evident audit trail** | Actions are recorded in an append-only, hash-chained ledger; altering any historical record is detectable — built with 21 CFR Part 11 expectations in mind. |
-| 🤝 **Human-in-the-loop by design** | AI never auto-approves anything. Narratives are always gated behind a named reviewer. |
-| 🎯 **Honest AI** | No fabricated "accuracy" or "confidence" scores. If the AI can't help, it says so clearly rather than inventing content. |
-| 🔓 **No vendor lock-in** | Designed for portable deployment (cloud or on-premises) with pluggable authentication. |
+| ≡ƒùú∩╕Å **Patient-voice preservation** | The patient's own words are stored verbatim and immutably. Every AI narrative is checked for how much of that original voice survived ΓÇö low fidelity forces human review. |
+| ≡ƒöÆ **Reproducible AI** | Every AI generation is locked to a cryptographic fingerprint of the exact model and prompt used, so any output can be reproduced and explained later. |
+| ≡ƒº╛ **Tamper-evident audit trail** | Actions are recorded in an append-only, hash-chained ledger; altering any historical record is detectable ΓÇö built with 21 CFR Part 11 expectations in mind. |
+| ≡ƒñ¥ **Human-in-the-loop by design** | AI never auto-approves anything. Narratives are always gated behind a named reviewer. |
+| ≡ƒÄ» **Honest AI** | No fabricated "accuracy" or "confidence" scores. If the AI can't help, it says so clearly rather than inventing content. |
+| ≡ƒöô **No vendor lock-in** | Designed for portable deployment (cloud or on-premises) with pluggable authentication. |
 
 ## Inside the review workspace
 
 Every AI draft lands in a review screen designed so a qualified reviewer can trust it at a
-glance — and prove that trust later:
+glance ΓÇö and prove that trust later:
 
-- **Side-by-side change view** — see exactly what the AI drafted versus what the reviewer edited before approval.
-- **The patient's own words, in view** — the verbatim account sits alongside the draft, with automatic alerts when too little of the patient's voice survives.
-- **Reproducibility panel** — the exact model and prompt fingerprint behind each narrative, so any output can be explained and reproduced.
-- **Per-case history** — the complete, hash-chained trail of everything that happened to that case, from intake through review.
+- **Side-by-side change view** ΓÇö see exactly what the AI drafted versus what the reviewer edited before approval.
+- **The patient's own words, in view** ΓÇö the verbatim account sits alongside the draft, with automatic alerts when too little of the patient's voice survives.
+- **Reproducibility panel** ΓÇö the exact model and prompt fingerprint behind each narrative, so any output can be explained and reproduced.
+- **Per-case history** ΓÇö the complete, hash-chained trail of everything that happened to that case, from intake through review.
 
 ### See it in practice
 
@@ -79,14 +79,14 @@ glance — and prove that trust later:
 | ![Reproducibility panel](docs/img/reproducibility.png) | **Reproducibility panel.** The model and prompt fingerprint behind this narrative. |
 | ![Case history](docs/img/audit-trail.png) | **Case history.** The hash-chained record of every action taken on the case. |
 
-*Synthetic case data only — nothing here is a real adverse-event report or a real patient's words.*
+*Synthetic case data only ΓÇö nothing here is a real adverse-event report or a real patient's words.*
 
 ## Who it's for
 
-- **PV / Safety Officers & Medical Reviewers** — faster drafting, consistent structure.
-- **Regulatory Affairs** — submission-ready records and complete audit trails.
-- **Quality & Validation** — reproducibility and inspection-readiness.
-- **Data Privacy / Governance** — patient data handled with care by design.
+- **PV / Safety Officers & Medical Reviewers** ΓÇö faster drafting, consistent structure.
+- **Regulatory Affairs** ΓÇö submission-ready records and complete audit trails.
+- **Quality & Validation** ΓÇö reproducibility and inspection-readiness.
+- **Data Privacy / Governance** ΓÇö patient data handled with care by design.
 
 ## Architecture at a glance
 
@@ -146,7 +146,7 @@ inspection. The compliance foundations are built in rather than added later:
   authenticated, role-scoped users. Retention policy and pseudonymisation are
   defined at deployment time.
 - **Accessibility.** The interface is developed against WCAG 2.1 AA, with
-  automated conformance checks (axe-core) gating every change in CI — relevant
+  automated conformance checks (axe-core) gating every change in CI ΓÇö relevant
   to obligations such as the European Accessibility Act and Section 508.
   (Full conformance also requires manual assistive-technology testing.)
 
@@ -162,7 +162,7 @@ right.
 
 **Built**
 
-- Structured AE case intake, including the reporter's verbatim account
+- Structured, ICH E2B-aligned AE case intake — patient, suspect-product and therapy detail, event and causality (dechallenge/rechallenge), seriousness criteria, reporter, and the patient's verbatim account
 - AI-assisted drafting of ICH E2B-aligned narratives (provider-agnostic; honest failure when no model is configured)
 - Patient-voice fidelity checking, with low fidelity forcing human review
 - Reviewer workspace with side-by-side draft-versus-edit comparison and inline patient voice
@@ -199,7 +199,7 @@ right.
 
 ## Contact
 
-Wayne Kearns — wayne.kearns@nortesconsulting.com ·
+Wayne Kearns ΓÇö wayne.kearns@nortesconsulting.com ┬╖
 [linkedin.com/in/waynekearns](https://www.linkedin.com/in/waynekearns/)
 
 Happy to walk through the private repository and a live demonstration on request.
@@ -207,5 +207,5 @@ Happy to walk through the private repository and a live demonstration on request
 ---
 
 <div align="center">
-<sub>PV Sentinel — because the fastest safety narrative is worthless if it loses the patient.</sub>
+<sub>PV Sentinel ΓÇö because the fastest safety narrative is worthless if it loses the patient.</sub>
 </div>
