@@ -70,6 +70,7 @@ glance ΓÇö and prove that trust later:
 - **The patient's own words, in view** ΓÇö the verbatim account sits alongside the draft, with automatic alerts when too little of the patient's voice survives.
 - **Reproducibility panel** ΓÇö the exact model and prompt fingerprint behind each narrative, so any output can be explained and reproduced.
 - **Per-case history** ΓÇö the complete, hash-chained trail of everything that happened to that case, from intake through review.
+- **Export the reviewed narrative** — copy or download the final narrative as plain text once the case is done.
 
 ### See it in practice
 
@@ -169,6 +170,8 @@ right.
 - Model and prompt fingerprinting for reproducible generation
 - Hash-chained, append-only audit ledger with integrity verification
 - Role-based access control
+- Case list with status filtering and free-text search
+- Export of the reviewed narrative as plain text
 - Versioned database migrations and a containerised deployment baseline (Docker + PostgreSQL)
 
 **Deliberately out of scope for the MVP**
